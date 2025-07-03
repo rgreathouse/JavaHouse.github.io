@@ -1,0 +1,168 @@
+/* ========== THEME VARIABLES: Define each color palette ========== */
+.theme-dark-roast {
+  --bg: #2d1b0f;          /* Rich dark brown background */
+  --text: #fdfaf6;        /* Light text for contrast */
+  --accent: #c7a17a;      /* Coffee-tan accent color */
+  --button-bg: #3e2a1c;   /* Deeper button shade */
+}
+
+.theme-macchiato {
+  --bg: #f3e7db;          /* Light creamy coffee background */
+  --text: #3e2f1c;        /* Dark roast text color */
+  --accent: #ba8b63;      /* Caramel accent */
+  --button-bg: #8e5a3d;   /* Medium roast brown button */
+}
+
+.theme-chai {
+  --bg: #e6f0e3;          /* Soft matcha mist background */
+  --text: #3e4a33;        /* Earthy green-gray for warmth and legibility */
+  --accent: #a3c499;      /* Green tea leaf highlight */
+  --button-bg: #6f8b5a;   /* Deeper herbal blend for calls to action */
+}
+.theme-chai .steam {
+  background: rgba(65, 85, 59, 0.8); /* green steam */
+}
+
+
+/* ========== PAGE TRANSITION EFFECTS ========== */
+html {
+  transition: background-color 10s ease, color 10s ease;
+}
+
+/* ========== GLOBAL STYLES ========== */
+body {
+  margin: 0;
+  font-family: 'Lora', serif;  /* Elegant, cafe-inspired typeface */
+  background-color: var(--bg);
+  color: var(--text);
+  transition: all 0.4s ease;   /* Soft transition for theme switch */
+}
+
+/* ========== HEADER + NAVIGATION ========== */
+header {
+  background-color: var(--button-bg);
+  color: var(--text);
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* ========== HERO SECTION STYLING ========== */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(to bottom, transparent 10%, var(--bg) 90%);
+  overflow: hidden;  /* Prevents steam animation from overflowing */
+}
+
+/* Call-To-Action Button */
+.cta-button {
+  background-color: var(--button-bg);
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 0.9rem;
+  background-color: var(--button-bg);
+}
+
+/* ========== STEAM ANIMATION ========== */
+.steam-container {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 3;  /* Top layer */
+}
+
+.steam {
+  width: 12px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  filter: blur(8px);
+  animation: rise 4s ease-in-out infinite;
+  opacity: 0;
+}
+
+/* Steam delay for natural staggered movement */
+.steam:nth-child(2) { animation-delay: 1.5s; }
+.steam:nth-child(3) { animation-delay: 3s; }
+
+/* Rising steam animation keyframes */
+@keyframes rise {
+  0% {
+    transform: translateY(0) scaleX(1);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-60px) scaleX(1.5);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-120px) scaleX(2);
+    opacity: 0;
+  }
+}
+
+@keyframes steepFadeIn {
+  0% {
+    transform: scale(0.95) translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+.coffee-cup-inline {
+  animation: steepFadeIn 8s ease-in-out;
+}
+
+/* ========== INLINE COFFEE CUP POSITIONING ========== */
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.coffee-cup-inline {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  width: 150px;
+  max-width: 60%;
+  margin: 10px 0;
+  opacity: 0.95;
+  z-index: 1;
+}

@@ -1,59 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-dark-roast">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaHouse Coffee</title>
-  <link rel="stylesheet" href="/css/styles.css" />
+  <title>JavaHouse</title>
+
+  <!-- Google Font: Lora creates a warm, inviting feel -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
+
+  <!-- External stylesheet for theme styles and layout -->
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
+
 <body>
 
+  <!-- ========== HEADER ========== -->
   <header>
-    <h1>JavaHouse Coffee</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Shop</a>
-      <a href="#">Menu</a>
+    <h1>JavaHouse</h1>
+
+    <!-- Navigation bar with theme selector and page links -->
+    <nav aria-label="Main navigation">
+      <!-- Accessible label for theme switching -->
+      <div class="theme-switcher">
+        <label for="theme-select">Theme:</label>
+        <select id="theme-select" name="theme-select">
+          <option value="dark-roast">Dark Roast</option>
+          <option value="macchiato">Macchiato</option>
+          <option value="chai">Chai</option>
+        </select>
+      </div>
+
+      <!-- Main site navigation -->
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <section class="hero sim-bay">
-    <h2>Swing into Flavor</h2>
-    <p>Experience immersive golf simulation while savoring alpha-gal safe cuisine.</p>
-    <button>Reserve a Bay</button>
-  </section>
+  <!-- ========== HERO SECTION ========== -->
+  <main>
+    <section class="hero">
+      <!-- Decorative steam animation for ambiance -->
+      <div class="steam-container">
+        <div class="steam"></div>
+        <div class="steam"></div>
+        <div class="steam"></div>
 
-  <section class="section-grid">
-    <div class="golf-card">
-      <h3>State-of-the-Art Simulators</h3>
-      <p>Perfect your swing in cutting-edge, climate-controlled virtual bays.</p>
-    </div>
-    <div class="golf-card">
-      <h3>Alpha-Gal Safe Dining</h3>
-      <p>Thoughtfully crafted meals that skip mammalian ingredients—flavor included.</p>
-    </div>
-  </section>
-
-  <section class="menu-section">
-    <h2>Menu Preview</h2>
-    <div class="section-grid">
-      <div class="menu-card">
-        <h3>Smoky Avocado Tacos</h3>
-        <p>Grilled veggies, citrus slaw, cashew crema in corn tortillas.</p>
-        <span class="badge">Alpha-Gal Safe</span>
+        <!-- Coffee cup placed behind text but under steam -->
+        
       </div>
-      <div class="menu-card">
-        <h3>Lemon Herb Chicken Bowl</h3>
-        <p>Free-range poultry with quinoa, greens, and lemon vinaigrette.</p>
-        <span class="badge">Dairy-Free</span>
-        <span class="badge">Alpha-Gal Safe</span>
-      </div>
-    </div>
-  </section>
 
+      <!-- Hero content: welcoming message and CTA -->
+      <div class="hero-text">
+        <h2>Welcome to JavaHouse</h2>
+        <img src="/images/coffee.png" alt="Coffee Cup" class="coffee-cup" width="125px">
+        <p>Where every cup feels like home.</p>
+        <a href="#" class="cta-button">Explore Menu</a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
   <footer>
-    <p>&copy; 2025 JavaHouse Coffee | Leitchfield, KY</p>
+    <p>&copy; 2025 JavaHouse Coffee Co.</p>
   </footer>
-<script src="/scripts/scripts.js"></script>
+
+  <!-- External JavaScript for theme handling and interactivity -->
+  <script src="/scripts/scripts.js" defer></script>
 </body>
 </html>
