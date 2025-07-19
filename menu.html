@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-dark-roast">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaHouse: Template</title>
+
+  <!-- Google Font: Lora creates a warm, inviting feel -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
+
+  <!-- External stylesheet for theme styles and layout -->
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header>
+    <h1>JavaHouse</h1>
+
+    <!-- Navigation bar with theme selector and page links -->
+    <nav aria-label="Main navigation">
+      <!-- Accessible label for theme switching -->
+      <div class="theme-switcher">
+        <label for="theme-select">Theme:</label>
+        <select id="theme-select" name="theme-select">
+          <option value="dark-roast">Dark Roast</option>
+          <option value="macchiato">Macchiato</option>
+          <option value="chai">Chai</option>
+        </select>
+      </div>
+
+      <!-- Main site navigation -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== MAIN SECTION ========== -->
+  <main>
+    <section class="Menu">
+  <h2>Our Menu</h2>
+
+  <!-- Section: Baked Goods -->
+  <article class="menu-category">
+    <h3>Baked Goods</h3>
+    <ul>
+      <li><span class="item-name">Cinnamon Roll</span> <span class="price">$4.00</span> <span class="status out-of-stock">Out of stock</span></li>
+      <li><span class="item-name">Muffins</span> <span class="price">$3.00</span></li>
+      <li><span class="item-name">Quest Protein Muffin</span> <span class="price">$2.25</span></li>
+      <li><span class="item-name">Cheesecake</span> <span class="price">$7.00</span></li>
+      <li><span class="item-name">Dubai Cheesecake</span> <span class="price">$9.00</span></li>
+      <li><span class="item-name">Carrot Strawberries</span> <span class="price">$6.00</span></li>
+      <li><span class="item-name">Fruit Tray</span> <span class="price">$10.99</span></li>
+      <li><span class="item-name">Watermelon Salad</span> <span class="price">$4.50</span></li>
+    </ul>
+  </article>
+
+  <!-- Section: Brewed Coffee Drinks -->
+  <article class="menu-category">
+    <h3>Brewed Coffee Drinks</h3>
+    <ul>
+      <li><span class="item-name">Hot Brewed Coffee</span> <span class="price">$1.99 - $3.18</span></li>
+      <li><span class="item-name">Iced Brewed Coffee</span> <span class="price">$4.00 - $4.85</span></li>
+      <li><span class="item-name">Pour Over</span> <span class="price">$3.50 - $4.30</span></li>
+      <li><span class="item-name">Cold Brew</span> <span class="price">$4.76 - $5.26</span></li>
+    </ul>
+  </article>
+
+  <!-- Section: Espresso Drinks -->
+  <article class="menu-category">
+    <h3>Espresso Drinks</h3>
+    <ul>
+      <li><span class="item-name">Salted Caramel Macchiato</span> <span class="price">$4.95 - $5.95</span></li>
+      <li><span class="item-name">Chocolate Macchiato</span> <span class="price">$4.95 - $5.95</span></li>
+      <li><span class="item-name">Red Eye</span> <span class="price">$3.35 - $4.25</span></li>
+      <li><span class="item-name">Peppermint Mocha</span> <span class="price">$5.10 - $6.13</span></li>
+      <!-- Add more items as needed -->
+    </ul>
+  </article>
+
+  <!-- Section: Non-Coffee Drinks -->
+  <article class="menu-category">
+    <h3>Non-Coffee Drinks</h3>
+    <ul>
+      <li><span class="item-name">Storehouse Refresher</span> <span class="price">$4.95 - $5.95</span></li>
+      <li><span class="item-name">Smoothie</span> <span class="price">$4.95 - $5.90</span></li>
+      <li><span class="item-name">Cup Of Water</span> <span class="price">$1.00</span></li>
+      <!-- Add more items -->
+    </ul>
+  </article>
+
+  <!-- Section: Lunch Menu -->
+  <article class="menu-category">
+    <h3>Lunch Menu</h3>
+    <ul>
+      <li><span class="item-name">Berry Pecan Chicken Salad</span> <span class="price">$11.99</span> <span class="status out-of-stock">Out of stock</span></li>
+    </ul>
+  </article>
+
+  <!-- Section: Gift Shop -->
+  <article class="menu-category">
+    <h3>Gift Shop</h3>
+    <ul>
+      <li><span class="item-name">$20 Gift Card</span> <span class="price">$20.00</span></li>
+      <li><span class="item-name">$5 Gift Card</span> <span class="price">$5.00</span></li>
+      <li><span class="item-name">Retail Coffee</span> <span class="price">$18.99</span></li>
+      <!-- Add more gift items -->
+    </ul>
+  </article>
+</section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>&copy; 2025 JavaHouse Coffee Co.</p>
+  </footer>
+
+  <!-- External JavaScript for theme handling and interactivity -->
+  <script src="/scripts/scripts.js" defer></script>
+</body>
+</html>
