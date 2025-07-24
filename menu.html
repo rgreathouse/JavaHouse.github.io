@@ -1,9 +1,16 @@
+<!--
+Name: Robert Greathouse
+File: menu.html
+Date: 07/23/2025
+-->
+
+
 <!DOCTYPE html>
 <html lang="en" class="theme-dark-roast">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaHouse: Template</title>
+  <title>JavaHouse: Menu</title>
 
   <!-- Google Font: Lora creates a warm, inviting feel -->
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
@@ -34,85 +41,66 @@
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="menu.html">Menu</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- ========== MAIN SECTION ========== -->
   <main>
-    <section class="Menu">
-  <h2>Our Menu</h2>
+  <div class="menu-container print-only">
+    <h2>Café Menu</h2>
+    <table class="menu-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Item</th>
+          <th>Price</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Baked Goods -->
+        <tr><td rowspan="8">Baked Goods</td><td>Cinnamon Roll</td><td>$4.00</td><td>Out of Stock</td></tr>
+        <tr><td>Muffins</td><td>$3.00</td><td>Available</td></tr>
+        <tr><td>Quest Protein Muffin</td><td>$2.25</td><td>Available</td></tr>
+        <tr><td>Cheesecake</td><td>$7.00</td><td>Available</td></tr>
+        <tr><td>Dubai Cheesecake</td><td>$9.00</td><td>Available</td></tr>
+        <tr><td>Carrot Strawberries</td><td>$6.00</td><td>Available</td></tr>
+        <tr><td>Fruit Tray</td><td>$10.99</td><td>Available</td></tr>
+        <tr><td>Watermelon Salad</td><td>$4.50</td><td>Available</td></tr>
 
-  <!-- Section: Baked Goods -->
-  <article class="menu-category">
-    <h3>Baked Goods</h3>
-    <ul>
-      <li><span class="item-name">Cinnamon Roll</span> <span class="price">$4.00</span> <span class="status out-of-stock">Out of stock</span></li>
-      <li><span class="item-name">Muffins</span> <span class="price">$3.00</span></li>
-      <li><span class="item-name">Quest Protein Muffin</span> <span class="price">$2.25</span></li>
-      <li><span class="item-name">Cheesecake</span> <span class="price">$7.00</span></li>
-      <li><span class="item-name">Dubai Cheesecake</span> <span class="price">$9.00</span></li>
-      <li><span class="item-name">Carrot Strawberries</span> <span class="price">$6.00</span></li>
-      <li><span class="item-name">Fruit Tray</span> <span class="price">$10.99</span></li>
-      <li><span class="item-name">Watermelon Salad</span> <span class="price">$4.50</span></li>
-    </ul>
-  </article>
+        <!-- Brewed Coffee Drinks -->
+        <tr><td rowspan="4">Brewed Coffee</td><td>Hot Brewed Coffee</td><td>$1.99 - $3.18</td><td>Available</td></tr>
+        <tr><td>Iced Brewed Coffee</td><td>$4.00 - $4.85</td><td>Available</td></tr>
+        <tr><td>Pour Over</td><td>$3.50 - $4.30</td><td>Available</td></tr>
+        <tr><td>Cold Brew</td><td>$4.76 - $5.26</td><td>Available</td></tr>
 
-  <!-- Section: Brewed Coffee Drinks -->
-  <article class="menu-category">
-    <h3>Brewed Coffee Drinks</h3>
-    <ul>
-      <li><span class="item-name">Hot Brewed Coffee</span> <span class="price">$1.99 - $3.18</span></li>
-      <li><span class="item-name">Iced Brewed Coffee</span> <span class="price">$4.00 - $4.85</span></li>
-      <li><span class="item-name">Pour Over</span> <span class="price">$3.50 - $4.30</span></li>
-      <li><span class="item-name">Cold Brew</span> <span class="price">$4.76 - $5.26</span></li>
-    </ul>
-  </article>
+        <!-- Espresso Drinks -->
+        <tr><td rowspan="4">Espresso Drinks</td><td>Salted Caramel Macchiato</td><td>$4.95 - $5.95</td><td>Available</td></tr>
+        <tr><td>Chocolate Macchiato</td><td>$4.95 - $5.95</td><td>Available</td></tr>
+        <tr><td>Red Eye</td><td>$3.35 - $4.25</td><td>Available</td></tr>
+        <tr><td>Peppermint Mocha</td><td>$5.10 - $6.13</td><td>Available</td></tr>
 
-  <!-- Section: Espresso Drinks -->
-  <article class="menu-category">
-    <h3>Espresso Drinks</h3>
-    <ul>
-      <li><span class="item-name">Salted Caramel Macchiato</span> <span class="price">$4.95 - $5.95</span></li>
-      <li><span class="item-name">Chocolate Macchiato</span> <span class="price">$4.95 - $5.95</span></li>
-      <li><span class="item-name">Red Eye</span> <span class="price">$3.35 - $4.25</span></li>
-      <li><span class="item-name">Peppermint Mocha</span> <span class="price">$5.10 - $6.13</span></li>
-      <!-- Add more items as needed -->
-    </ul>
-  </article>
+        <!-- Non-Coffee Drinks -->
+        <tr><td rowspan="3">Non-Coffee Drinks</td><td>Storehouse Refresher</td><td>$4.95 - $5.95</td><td>Available</td></tr>
+        <tr><td>Smoothie</td><td>$4.95 - $5.90</td><td>Available</td></tr>
+        <tr><td>Cup of Water</td><td>$1.00</td><td>Available</td></tr>
 
-  <!-- Section: Non-Coffee Drinks -->
-  <article class="menu-category">
-    <h3>Non-Coffee Drinks</h3>
-    <ul>
-      <li><span class="item-name">Storehouse Refresher</span> <span class="price">$4.95 - $5.95</span></li>
-      <li><span class="item-name">Smoothie</span> <span class="price">$4.95 - $5.90</span></li>
-      <li><span class="item-name">Cup Of Water</span> <span class="price">$1.00</span></li>
-      <!-- Add more items -->
-    </ul>
-  </article>
+        <!-- Lunch Menu -->
+        <tr><td rowspan="1">Lunch Menu</td><td>Berry Pecan Chicken Salad</td><td>$11.99</td><td>Out of Stock</td></tr>
 
-  <!-- Section: Lunch Menu -->
-  <article class="menu-category">
-    <h3>Lunch Menu</h3>
-    <ul>
-      <li><span class="item-name">Berry Pecan Chicken Salad</span> <span class="price">$11.99</span> <span class="status out-of-stock">Out of stock</span></li>
-    </ul>
-  </article>
+        <!-- Gift Shop -->
+        <tr><td rowspan="2">Gift Shop</td><td>$20 Gift Card</td><td>$20.00</td><td>Available</td></tr>
+        <tr><td>$5 Gift Card</td><td>$5.00</td><td>Available</td></tr>
 
-  <!-- Section: Gift Shop -->
-  <article class="menu-category">
-    <h3>Gift Shop</h3>
-    <ul>
-      <li><span class="item-name">$20 Gift Card</span> <span class="price">$20.00</span></li>
-      <li><span class="item-name">$5 Gift Card</span> <span class="price">$5.00</span></li>
-      <li><span class="item-name">Retail Coffee</span> <span class="price">$18.99</span></li>
-      <!-- Add more gift items -->
-    </ul>
-  </article>
-</section>
+        <!-- Retail -->
+        <tr><td>Retail Coffee</td><td>$18.99</td><td>Available</td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
 
   </main>
 

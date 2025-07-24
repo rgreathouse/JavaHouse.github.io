@@ -1,16 +1,15 @@
 <!--
 Name: Robert Greathouse
-File: index.html
+File: contact.html
 Date: 07/23/2025
 -->
-
 
 <!DOCTYPE html>
 <html lang="en" class="theme-dark-roast">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JavaHouse</title>
+  <title>JavaHouse: Contact Us</title>
 
   <!-- Google Font: Lora creates a warm, inviting feel -->
   <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
@@ -48,11 +47,45 @@ Date: 07/23/2025
     </nav>
   </header>
 
-  <!-- ========== HERO SECTION ========== -->
-  <main>
-  <section class="entry-scene">
-    <img src="/images/door.png" alt="JavaHouse Door" id="door-image" />
-    <img src="/images/shop.png" alt="Inside JavaHouse" id="inside-image" />
+  <!-- ========== MAIN SECTION ========== -->
+<main>
+  <p>
+    Use our form to contact us or if you prefer
+    <a href="mailto:rgreathouse0001@kctcs.edu">Email Us!</a>
+  </p>
+
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <form id="contactForm" class="contact-form">
+      <!-- Text box -->
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <!-- Radio buttons -->
+      <p>Preferred Contact Method:</p>
+      <label><input type="radio" name="contactMethod" value="Email" required /> Email</label>
+      <label><input type="radio" name="contactMethod" value="Phone" /> Phone</label>
+
+      <!-- Checkboxes -->
+      <p>What are you interested in?</p>
+      <label><input type="checkbox" name="interests" value="Coffee" /> Coffee</label>
+      <label><input type="checkbox" name="interests" value="Bakery" /> Bakery</label>
+
+      <!-- Dropdown -->
+      <label for="location">Choose a Location</label>
+      <select id="location" name="location" required>
+        <option value="">--Please choose an option--</option>
+        <option value="Downtown">Downtown</option>
+        <option value="Campus">Campus</option>
+        <option value="Suburb">Suburb</option>
+      </select>
+
+      <!-- Message -->
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 </main>
 

@@ -1,0 +1,108 @@
+<!--
+Name: Robert Greathouse
+File: media.html
+Date: 07/23/2025
+-->
+
+<!DOCTYPE html>
+<html lang="en" class="theme-dark-roast">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaHouse: Media</title>
+
+  <!-- Google Font: Lora creates a warm, inviting feel -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
+
+  <!-- External stylesheet for theme styles and layout -->
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header>
+    <h1>JavaHouse</h1>
+
+    <!-- Navigation bar with theme selector and page links -->
+    <nav aria-label="Main navigation">
+      <!-- Accessible label for theme switching -->
+      <div class="theme-switcher">
+        <label for="theme-select">Theme:</label>
+        <select id="theme-select" name="theme-select">
+          <option value="dark-roast">Dark Roast</option>
+          <option value="macchiato">Macchiato</option>
+          <option value="chai">Chai</option>
+        </select>
+      </div>
+
+      <!-- Main site navigation -->
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== MAIN SECTION ========== -->
+  <section class="video-faq" style="margin-left: 3rem;">
+  <h2>Learning</h2>
+
+  <details>
+    <summary>New to coffee? Become an aficionado</summary>
+    <div class="video-wrapper">
+      <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/epMDcqKoQys?si=EQzMqS8krdaG1qEc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+  </details>
+
+  <details>
+    <summary>What does it take to be a Barista?</summary>
+    <div class="video-wrapper">
+      <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/tg_BWkx20hE?si=AZbkRUG9UOLvo0Lr"
+              title="Barista Training"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+  </details>
+
+  <details>
+    <summary>Want to see some of the coffee art we do?</summary>
+    <div class="video-wrapper">
+      <iframe width="560" height="315"
+              src="https://www.youtube.com/embed/4TTp06RVy3M?si=H81F3JVdVQZPhF4m"
+              title="Latte Art"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+    </div>
+  </details>
+</section>
+
+<h2>How to Make an Espresso</h2>
+<ol>
+  <li>Grind fresh coffee beans to a fine consistency.</li>
+  <li>Preheat the espresso machine and portafilter.</li>
+  <li>Measure and tamp the ground coffee into the portafilter.</li>
+  <li>Lock the portafilter into the machine's group head.</li>
+  <li>Start the shot and extract for about 25-30 seconds.</li>
+  <li>Stop the machine and serve the espresso immediately.</li>
+</ol>
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>&copy; 2025 JavaHouse Coffee Co.</p>
+  </footer>
+
+  <!-- External JavaScript for theme handling and interactivity -->
+  <script src="/scripts/scripts.js" defer></script>
+</body>
+</html>
